@@ -20,7 +20,8 @@
 
 */
 
-require('heroku-self-ping').default(`${process.env.APP_URL}`);
+const herokuping = require("heroku-self-ping").default(process.env.APP_URL);
+
 
 console.log(`
     ______   ________  __    __  __    __   ______

@@ -5,22 +5,23 @@
 // see https://gekko.wizb.it/docs/installation/installing_gekko_on_a_server.html#Configuring-Gekko
 
 const CONFIG = {
-  headless: false,
+  headless: true,
   api: {
-    host: '127.0.0.1',
-    port: 3000,
+    host: process.env.APP_URL,
+    port: '',
     timeout: 120000 // 2 minutes
   },
   ui: {
-    ssl: false,
-    host: 'localhost',
-    port: 3000,
+    ssl: true,
+    host: process.env.APP_URL,
+    port: '',
     path: '/'
   },
   adapter: 'sqlite'
 }
 
-if(typeof window === 'undefined')
+
+if (typeof window === 'undefined')
   module.exports = CONFIG;
 else
   window.CONFIG = CONFIG;

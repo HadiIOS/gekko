@@ -15,9 +15,9 @@
   },
   "author": "Mike van Rossum <mike@mvr.me>",
   "dependencies": {
-    "convnetjs": "0.3.0",
-    "mathjs": "9.5.0",
-    "heroku-self-ping": "2.0.1",
+    "convnetjs": "*",
+    "mathjs": "*",
+    "heroku-self-ping": "*",
     "async": "2.1.2",
     "bitfinex-api-node": "^1.2.1",
     "co-fs": "^1.2.0",

@@ -1,1 +1,1 @@
-web: sh install-npms.sh 
+worker: sh install-npms.sh 

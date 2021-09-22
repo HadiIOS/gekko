@@ -7,13 +7,13 @@
 const CONFIG = {
   headless: true,
   api: {
-    host: "https://hn-gekko.herokuapp.com/",
+    host: `${process.env.APP_URL}`,
     port: '',
     timeout: 120000 // 2 minutes
   },
   ui: {
     ssl: true,
-    host: "https://hn-gekko.herokuapp.com/",
+    host: `${process.env.APP_URL}`,
     port: '',
     path: '/'
   },

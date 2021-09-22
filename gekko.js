@@ -20,6 +20,8 @@
 
 */
 
+require('heroku-self-ping').default(`${process.env.APP_URL}`);
+
 console.log(`
     ______   ________  __    __  __    __   ______
    /      \\ /        |/  |  /  |/  |  /  | /      \\
@@ -60,4 +62,5 @@ pipeline({
   config: config,
   mode: mode
 });
+
 
